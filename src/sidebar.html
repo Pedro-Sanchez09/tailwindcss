@@ -1,70 +1,50 @@
-<aside class="flex " aria-label="Sidebar">
+
+    <span class="md:hidden text-white text-4xl top-5 left-4 cursor-pointer " >
+        <i id="menuOpen" class="bi bi-filter-left px-1 bg-gray-900 rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-white" ></i>
+    </span>
 
 
-    <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded  dark:bg-gray-800">
-
-              <!-- ENG Botón responsive -->
-              <button id="bntSidebar" class=" flex p-2 ml-3 text-sm text-white rounded-lg  hover:bg-indigo-500" data-collapse-toggle="sideBarList" type="button"  aria-controls="sideBarList" aria-expanded="false">
-                <svg id="iconOpen1" class="text-white w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    <svg id="iconClose1" class="text-white hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    <span class="ml-3 text-white " id="spMenu" >Menu</span>
-                </button>
-            
-            <!-- END Botón responsive -->
-        <div id="sideBarList">
-            <ul class="space-y-4 " >
-                <li>
-                    <a href="./"
-                        class="transition ease-in-out delay-10 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 flex  items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white ">
-                        <svg class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-                            <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-                        </svg>
-                        <span class="ml-3 "  id="curso">Cursos</span>
-                    </a>
-                </li>
-
-
-
-                <li>
-                    <a href="#"
-                        class="transition ease-in-out delay-10 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 flex  items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white ">
-                        <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="sideBar flex-1 ml-3 whitespace-nowrap">Hobbies</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#"
-                        class="transition ease-in-out delay-10 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 flex  items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white ">
-                        <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="sideBar flex-1 ml-3 whitespace-nowrap">Sign In</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="transition ease-in-out delay-10 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 flex  items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white ">
-                        <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="sideBar flex-1 ml-3 whitespace-nowrap">Sign Up</span>
-                    </a>
-                </li>
-
-            </ul>
+        <div id="sideBar" class="hidden sidebar md:block top-0 bottom-0 duration-1000
+          p-2 w-[300px] overflow-y-auto text-center bg-gray-900 shadow h-screen">
+          <aside>
+          <div class="text-gray-100 text-xl">
+            <div class="p-2.5 mt-1 flex items-center rounded-md ">
+              <i class="bi bi-menu-up px-2 py-1 bg-blue-600 rounded-md"></i>
+              <h1 class="text-[15px]  ml-3 text-xl text-gray-200 font-bold">Menú</h1>
+              <i  id="menuClose" class="  bi bi-arrow-left-square ml-auto cursor-pointer md:hidden   hover:scale-y-150 hover:scale-x-150  duration-500" ></i>
+            </div>
+            <hr class="my-2 text-gray-600">
+      
+            <div>
+             
+      
+              <div class="  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600  duration-300 p-2.5 mt-2 flex items-center rounded-md px-4  cursor-pointer   ">
+                <a href="./" >
+                <i class="bi bi-book-half  focus:outline-none focus:ring-2 focus:ring-white"></i>
+                <span class="text-[15px] ml-4 text-gray-200">Cursos</span>
+            </a>
+              </div>
+              <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600  duration-300 p-2.5 mt-2 flex items-center rounded-md px-4 cursor-pointer ">
+                <a href="./juegos.php" >
+                <i class="bi bi-playstation"></i>
+                <span class="text-[15px] ml-4 text-gray-200">Juegos</span>
+                </a>
+              </div>
+              <hr class="my-4 text-gray-600">
+           
+      
+             
+           
+              <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600  duration-300 p-2.5 mt-2 flex items-center rounded-md px-4 cursor-pointer">
+                <a href="#">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span class="text-[15px] ml-4 text-gray-200">Salir</span>
+                </a>
+              </div>
+      
+            </div>
+          </div>
+        </aside>
         </div>
-    </div>
-</aside>
+        
+ 
